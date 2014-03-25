@@ -11,7 +11,7 @@ RUN apt-get -y update
 RUN apt-get install -y openssh-server
 
 RUN mkdir -p /var/run/sshd
-RUN echo 'root:julius' | chpasswd
+RUN echo 'root:devrt' | chpasswd
 
 ADD . /chef
 RUN cd /chef && /opt/chef/embedded/bin/berks install --path /chef/cookbooks
