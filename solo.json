@@ -1,0 +1,6 @@
+{
+  "run_list": [
+    "recipe[julius::default]",
+    "recipe[julius::dictationkit]"
+  ]
+} 
